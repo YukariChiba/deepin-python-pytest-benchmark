@@ -1,0 +1,48 @@
+.TH USAGE: "1" "March 2018" "pytest-benchmark" "User Commands"
+.SH NAME
+pytest-benchmark \- Tool for inspecting data from pytest benchmark fixture
+.SH DESCRIPTION
+.B pytest\-benchmark
+[-h [COMMAND]] [--storage URI] [--netrc [NETRC]] [--verbose] {help, list or compare}
+.SS "commands:"
+.TP
+help
+.IP
+Display help and exit.
+.TP
+list
+.IP
+List saved runs.
+.TP
+compare
+.IP
+Compare saved runs.
+
+The compare command takes almost all the --benchmark options from the pytest benchmark fixture, minus the prefix.
+A complete list can be found in the documentation.
+.SS "optional arguments:"
+.TP
+\fB\-h\fR, \fB\-\-help\fR
+show help message and exit
+.TP
+\fB\-\-verbose\fR
+increase verbosity
+.TP
+\fB\-\-netrc\fR
+.TP
+\fB\-\-storage\fR
+.SH EXAMPLES
+.TP
+pytest-benchmark compare ‘Linux-CPython-3.5-64bit/*‘
+.IP
+Loads all benchmarks ran with that interpreter. Note the special quoting that disables your shell’s glob expansion.
+.TP
+pytest-benchmark compare 0001
+.IP
+Loads first run from all the interpreters.
+.TP
+pytest-benchmark compare /foo/bar/0001_abc.json /lorem/ipsum/0001_sir_dolor.json
+.IP
+Loads runs from exactly those files.
+.SH COPYRIGHT
+This manual page is Copyright © 2018 Hugo Lefeuvre <hle@debian.org>. Permission is granted to copy, distribute and/or modify this document under the terms of the GNU General Public License, Version 3 or any later version published by the Free Software Foundation.
