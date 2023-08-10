@@ -1,3 +1,22 @@
+python-pytest-benchmark (3.2.2-4) unstable; urgency=medium
+
+  * Team upload.
+  * Add missing depend on python3-py (Closes: #1040398)
+
+ -- Timo Röhling <roehling@debian.org>  Tue, 11 Jul 2023 23:49:23 +0200
+
+python-pytest-benchmark (3.2.2-3) unstable; urgency=medium
+
+  [ Ondřej Nový ]
+  * Bump Standards-Version to 4.4.1.
+  * d/control: Update Vcs-* fields with new Debian Python Team Salsa
+    layout.
+
+  [ Sandro Tosi ]
+  * Use the new Debian Python Team contact name and address
+
+ -- Sandro Tosi <morph@debian.org>  Fri, 03 Jun 2022 23:27:49 -0400
+
 python-pytest-benchmark (3.2.2-2) unstable; urgency=medium
 
   [ Ondřej Nový ]
